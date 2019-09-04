@@ -1,0 +1,12 @@
+ffconcat version 1.0
+file bunny.mov
+	inpoint 1.0
+	outpoint 3.0
+
+file bunny.mov
+	inpoint 5.0
+	outpoint 8.0
+
+file bunny.mov
+	inpoint 13.0
+	outpoint 19.0
