@@ -6,5 +6,5 @@ if [ "$2" != "" ]; then l=$2; fi
 #ffmpeg -i "$f" -i "$l" -lavfi "overlay=x=main_w/2" bunny_logo.mp4
 ffplay -f lavfi "movie=$f:streams=dv+da[bg][aud];
   movie=$l[logo];
-  [logo]scale=w=iw/2:h=ih/2[logos];
-  [bg][logos]overlay[out0],[aud]acopy[out1]"
+  [logo]scale=w=iw/3:-1[logos];
+  [bg][logos]overlay=x=0.975*W-w:y=0.05*H[out0],[aud]acopy[out1]"
