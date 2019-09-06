@@ -7,4 +7,5 @@
 *.m2a
 *.wav
 *.aac
+*.ts
 loudness_report.txt
