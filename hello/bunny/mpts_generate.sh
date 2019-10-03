@@ -1,6 +1,6 @@
 #!/bin/sh
-f1="bunny.mov"
-f2="bunny1280.mp4"
+f1="bunny1280.mp4"
+f2="422.mxf"
 if [ "$1" != "" ] ;then f1=$1; fi
 if [ "$2" != "" ] ;then f2=$2; fi
 ffmpeg -i "$f1" -i "$f2" \
