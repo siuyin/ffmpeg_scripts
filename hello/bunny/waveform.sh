@@ -3,4 +3,8 @@
 # y line select
 # o scope trace opacity
 # tw scope trace width
-ffplay -i bunny.mov  -vf oscilloscope=c=1:tw=0.9:y=545/1080:o=0.5
+f="bunny.mov"
+y=545
+if [ "$1" != "" ] ;then f=$1; fi
+if [ "$2" != "" ] ;then y=$2; fi
+ffplay -i $f  -vf oscilloscope=c=1:tw=0.9:y=$y/1080:o=0.5
